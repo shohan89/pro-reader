@@ -8,12 +8,9 @@ import Root from "./Root";
 
 const router = createBrowserRouter([
   {
-    path: '*',
-    element: <ErrorPage />
-  },
-  {
     path: '/',
     element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
