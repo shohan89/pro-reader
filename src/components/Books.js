@@ -4,7 +4,7 @@ import Book from './Book'
 
 const Books = () => {
 
-  const loadedBooks = useLoaderData();
+  const loadedBooks = useLoaderData(); //* fetched loaded data from the routes
   const booksData = loadedBooks.books;
   console.log( booksData );
 
